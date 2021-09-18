@@ -109,20 +109,6 @@
 
 <div class="container">
 	<div class="settings">
-		<label>
-			Rows :
-			<input bind:value={config.rows}
-			on:input={() => dispatch('rowchange')}
-			 type="range" min="8" max="100" class="slider">
-			 {config.rows}
-		</label>
-		<br/>
-		<label>
-			Speed :
-			<input bind:value={config.speed}
-			 type="range" min="60" max="500" class="slider">
-			 {config.speed}
-		</label>
 		<br/>
 		<label>
 			Scale :

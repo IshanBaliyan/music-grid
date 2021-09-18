@@ -5,7 +5,7 @@
 	let config = {
 		playing: false,
 		speed: 200,
-		rows: 16,
+		rows: 30,
 		scale_key: 'classic',
 	}
 
@@ -161,8 +161,8 @@
 
 
 <div class="container" align="center">
-	<h3>Music Grid</h3>
-	<span class="tagline">Turn on sound. Tap on the grid.<br/>Hit Play. You'll figure it out ;)</span>
+	<h3>Contribute your own NFT Musical sound</h3>
+	<span class="tagline">Turn on the sound and tap on the grid to play.<br/> After you're done, click the download button.</span>
 	<br/>
 	<Controls
 		bind:grid={grid}
@@ -183,14 +183,6 @@
 			<Row bind:row={row} bind:playing={row.isPlaying} paused={!config.playing}/>
 		{/each}
 	</table>
-	<br/>
-	<div class="footer" align="center">
-		<a href="https://irshadpi.me/best-of-music-grid" target="_blank">Best of Music Grid</a>
-		<br/>
-		<a href="https://svelte.dev" target="_blank">Svelte</a> 
-		| <a href="https://github.com/irshadshalu/music-grid" target="_blank"><i class="fa fa-lg fa-github"></i></a> 
-		| <a href="https://irshadpi.me" target="_blank">irshad</a> 
-	</div>
-	<br/>
+
 	<br/>
 </div>
